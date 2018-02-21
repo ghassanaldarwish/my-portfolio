@@ -10,9 +10,13 @@ body, body * {
 }
 
 body {
-  width: 70%;
-  margin: auto;
   background: #888;
+}
+
+.flexBox {
+  display: inline-flex;
+  position: relative;
+  justify-content: space-between;
 }
 
 /* ------ start my header  ----*/
@@ -51,4 +55,33 @@ body {
   float: left;
   padding: 10px;
   overflow: hidden;
+}
+
+/* ------ start main body  ----*/
+
+main {
+  height: 4000px;
+  /* just to make the height clear :) */
+}
+
+.background-features {
+  background: #fff;
+}
+
+.background-features h2 {
+  color: #4a5556;
+  text-transform: uppercase;
+}
+
+.background-features p {
+  color: #9a9898;
+  text-align: justify;
+}
+
+.features {
+  padding-left: 20px;
+}
+
+section.features:first-child {
+  padding-left: 0;
 }
