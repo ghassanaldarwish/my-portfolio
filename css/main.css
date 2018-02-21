@@ -79,9 +79,27 @@ main {
 }
 
 .features {
-  padding-left: 20px;
+  padding: 20px;
 }
 
 section.features:first-child {
   padding-left: 0;
+}
+
+/* ______________________________________*/
+
+.background-aboutme {
+  background: #f3f3f2;
+}
+
+.background-aboutme .image {
+  width: 40%;
+}
+
+.background-aboutme .image img {
+  width: 100%;
+}
+
+.background-aboutme .about-me {
+  width: 60%;
 }
