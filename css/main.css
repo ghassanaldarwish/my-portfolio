@@ -17,7 +17,7 @@ body {
 
 /* ------ start my header  ----*/
 
-.slider {
+.header .slider {
   height: 800px;
   background: #ddd;
 }
@@ -31,25 +31,23 @@ body {
   overflow: hidden;
 }
 
-.navbar h2 {
+.header .navbar .container h2 {
   float: left;
   color: #eef4f4;
-  overflow: hidden;
 }
 
-.navbar h2 span {
+.header .navbar .container h2 span {
   color: #6fe082;
 }
 
-.navbar ul {
+.header .navbar .container ul {
   list-style: none;
   padding-left: 0;
   float: right;
   color: #eef4f4;
-  overflow: hidden;
 }
 
-.navbar ul li {
+.header .navbar .container ul li {
   float: left;
   padding: 10px;
   overflow: hidden;
