@@ -4,3 +4,53 @@
   margin: auto;
   width: 1110px;
 }
+
+body, body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #888;
+}
+
+/* ------ start my header  ----*/
+
+.slider {
+  height: 800px;
+  background: #ddd;
+}
+
+.header {
+  text-transform: uppercase;
+}
+
+.header .navbar {
+  background: #263031;
+  overflow: hidden;
+}
+
+.navbar h2 {
+  float: left;
+  color: #eef4f4;
+  overflow: hidden;
+}
+
+.navbar h2 span {
+  color: #6fe082;
+}
+
+.navbar ul {
+  list-style: none;
+  padding-left: 0;
+  float: right;
+  color: #eef4f4;
+  overflow: hidden;
+}
+
+.navbar ul li {
+  float: left;
+  padding: 10px;
+  overflow: hidden;
+}
