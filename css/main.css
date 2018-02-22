@@ -82,6 +82,7 @@ p {
 .header .navbar .container h2 {
   float: left;
   color: #eef4f4;
+  padding-top: 8px;
 }
 
 .header .navbar .container h2 span {
