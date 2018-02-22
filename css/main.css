@@ -13,6 +13,7 @@ body, body * {
 body {
   background: #fff;
   font-family: 'Fira Sans', sans-serif;
+  line-height: 36px;
 }
 
 h1, h2, h3 {
@@ -34,16 +35,39 @@ p {
 /* ------ start my header  ----*/
 
 .header .slider {
-  height: 732px;
+  height: 722px;
   background: url("../img/black2.png");
   background-size: cover;
+  text-align: center;
+}
+
+.header .slider .intro {
+  padding-top: 265px;
 }
 
 .header .slider .intro h1 {
-  font-size: 40px;
-  color: #fff;
+  padding: 20px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
   text-align: center;
-  margin: 0;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  width: 660px;
+  margin: auto;
+}
+
+.header .slider .intro button {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  margin-top: 40px;
 }
 
 .header {
@@ -128,7 +152,7 @@ section.features:first-child {
   width: 60%;
   float: left;
   padding-left: 118px;
-  padding-top: 132px;
+  padding-top: 48px;
 }
 
 .background-aboutme .about-me p {
@@ -183,7 +207,7 @@ progress::-webkit-progress-bar {
   width: 45%;
 }
 
-button {
+.myresume button, .skills button {
   border: 1px solid green;
   text-decoration: none;
   padding: 10px;
@@ -218,8 +242,17 @@ button {
 
 /*_____________________________*/
 
-.word, .Portfolio {
+.wordtext {
+  background: #f3f3f2;
+  line-height: 36px;
+}
+
+.wordtext .word, .Portfolio {
   text-align: center;
+}
+
+.wordtext .word p {
+  padding: 0 60px;
 }
 
 /* start style my Portfolio */
