@@ -111,7 +111,7 @@ p {
   transition: color ease 1.5s;
 }
 
-.header .navbar .container ul li a:hover {
+.header .navbar .container ul li a:hover, .header .navbar .container ul li.activ a {
   color: #2ecc71;
 }
 
@@ -196,6 +196,7 @@ section.features:first-child {
   padding-top: 20px;
   margin-top: 45px;
   justify-content: space-between;
+  text-align: justify;
 }
 
 .skills h2 {
@@ -249,6 +250,7 @@ progress::-webkit-progress-bar {
 .myeducation .education, .myexperiensce .work {
   justify-content: space-between;
   display: flex;
+  text-align: justify;
 }
 
 .myeducation .education .edu, .myeducation .education .mydoc, .myexperiensce .work .workexp, .myexperiensce .work .workdis {
