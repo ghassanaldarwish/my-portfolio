@@ -227,3 +227,21 @@ button {
 .word, .Portfolio {
   text-align: center;
 }
+
+/* start style my Portfolio */
+
+.myproj {
+  margin-top: 100px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.myproj div {
+  width: 30%;
+  height: 230px;
+  background: blue;
+  border: 1px solid;
+}
