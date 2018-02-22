@@ -68,6 +68,10 @@ p {
   text-align: center;
   background-color: transparent;
   margin-top: 40px;
+  text-transform: uppercase;
+  width: 185px;
+  height: 56px;
+  border: 2px solid #ffffff;
 }
 
 .header {
@@ -99,6 +103,16 @@ p {
 .header .navbar .container ul li {
   float: left;
   padding: 10px;
+}
+
+.header .navbar .container ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color ease 1.5s;
+}
+
+.header .navbar .container ul li a:hover {
+  color: #2ecc71;
 }
 
 /* ------ start main body  ----*/
