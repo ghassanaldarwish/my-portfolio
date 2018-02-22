@@ -245,3 +245,14 @@ button {
   background: blue;
   border: 1px solid;
 }
+
+/*___________________________*/
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact div {
+  width: 45%;
+}
