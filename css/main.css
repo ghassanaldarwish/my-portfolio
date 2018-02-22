@@ -223,3 +223,7 @@ button {
 }
 
 /*_____________________________*/
+
+.word, .Portfolio {
+  text-align: center;
+}
