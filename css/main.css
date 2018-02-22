@@ -189,13 +189,14 @@ progress::-webkit-progress-bar {
   width: 45%;
 }
 
-.meter a {
+button {
   border: 1px solid green;
   text-decoration: none;
   padding: 10px;
   margin-top: 33px;
   margin-left: 25px;
   color: green;
+  background: #fff;
 }
 
 .meter p {
@@ -205,7 +206,7 @@ progress::-webkit-progress-bar {
 
 /*_____________________________*/
 
-.resume {
+.myresume {
   background: #f3f3f2;
   text-align: center;
 }
