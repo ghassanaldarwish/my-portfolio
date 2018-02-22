@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Fira+Sans');
 /* ------ start my rules  ----*/
 
 .container {
@@ -10,7 +11,18 @@ body, body * {
 }
 
 body {
-  background: #888;
+  background: #fff;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: #4a5556;
+  font-family: 'Cinzel', serif;
+}
+
+p {
+  color: #9a9898;
 }
 
 .flexBox {
@@ -22,8 +34,21 @@ body {
 /* ------ start my header  ----*/
 
 .header .slider {
-  height: 800px;
-  background: #ddd;
+  min-width: calc(100vw - 50%);
+  max-height: 100vh;
+  height: 987px;
+  background: url("../img/img.png");
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding-top: 27%;
+  margin: 0;
 }
 
 .header {
@@ -54,7 +79,6 @@ body {
 .header .navbar .container ul li {
   float: left;
   padding: 10px;
-  overflow: hidden;
 }
 
 /* ------ start main body  ----*/
@@ -88,18 +112,100 @@ section.features:first-child {
 
 /* ______________________________________*/
 
+.width-100 {
+  width: 100%;
+}
+
 .background-aboutme {
   background: #f3f3f2;
 }
 
 .background-aboutme .image {
   width: 40%;
+  float: left;
 }
 
 .background-aboutme .image img {
   width: 100%;
+  background-size: cover;
 }
 
 .background-aboutme .about-me {
   width: 60%;
+  float: left;
+  padding-left: 118px;
+  padding-top: 132px;
+}
+
+.background-aboutme .about-me p {
+  text-align: justify;
+}
+
+.fix-flot {
+  overflow: hidden;
+}
+
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 31px;
+  justify-content: space-between;
+}
+
+.hobbies section {
+  width: 40%;
+}
+
+/*_________________________________*/
+
+.skills {
+  display: flex;
+  padding-top: 20px;
+  margin-top: 45px;
+  justify-content: space-between;
+}
+
+.skills h2 {
+  margin: 0;
+}
+
+progress {
+  background-color: green;
+  width: 100%;
+}
+
+progress::-webkit-progress-value {
+  background-color: green !important;
+  color: black;
+}
+
+progress::-webkit-progress-bar {
+  background: #f3f3f2;
+  background-color: #f3f3f2;
+   !important;
+}
+
+.meter {
+  width: 45%;
+}
+
+.meter a {
+  border: 1px solid green;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 33px;
+  margin-left: 25px;
+  color: green;
+}
+
+.meter p {
+  margin-top: 33px;
+  margin-bottom: 43px;
+}
+
+/*_____________________________*/
+
+.resume {
+  background: #f3f3f2;
+  text-align: center;
 }
