@@ -208,7 +208,7 @@ section.features:first-child {
 .background-aboutme .about-me {
   width: 60%;
   float: left;
-  padding-left: 118px;
+  padding-left: 90px;
   padding-top: 50px;
   border-bottom: 50px;
 }
@@ -221,8 +221,8 @@ section.features:first-child {
   overflow: hidden;
 }
 
-.hobbies {
-  margin-top: 20px;
+.hobbies h3 {
+  font-size: 16px;
 }
 
 /*_________________________________*/
@@ -230,10 +230,14 @@ section.features:first-child {
 /*  start hobbies   */
 
 .hobbies {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 31px;
   justify-content: space-between;
+  position: relative;
+  clear: both;
+  overflow: hidden;
 }
 
 .hobbies section {
@@ -242,6 +246,28 @@ section.features:first-child {
 
 .myfeatures {
   padding: 50px 0;
+}
+
+/* .ff {
+  display: flex;
+} */
+
+.hobbies .i {
+  float: left;
+  display: inline-block;
+  margin-right: 0px;
+  padding-top: 11px;
+  padding-right: 17px;
+  color: #2ecc71;
+}
+
+.hobbies i {
+  transition: all ease-in-out .7s;
+}
+
+.hobbies i:hover {
+  transform: scale(.75);
+  color: #22a55a;
 }
 
 /*_________________________________*/
@@ -548,4 +574,27 @@ footer.footer {
   padding: 20px;
   color: #3e4648;
   text-transform: capitalize;
+  font-size: 16px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  margin: auto;
+}
+
+.footer ul li {
+  margin-left: 0;
+}
+
+.footer ul li i {
+  transition: all ease-in-out .7s;
+}
+
+.footer ul li i:hover {
+  transform: scale(1.3);
+  color: #fff;
 }
