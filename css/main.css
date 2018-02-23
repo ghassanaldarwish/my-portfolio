@@ -292,17 +292,52 @@ progress::-webkit-progress-bar {
 
 /*    start my fav words and text  */
 
+.contanttext {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.contanttext .word {
+  margin-bottom: 24px;
+}
+
+.contanttext .word p {
+  border-left: 5px solid rgba(154, 152, 152, .6);
+  padding-left: 40px;
+  background: linear-gradient(to right, rgba(154, 152, 152, .15), #f3f3f2);
+}
+
 .wordtext {
   background: #f3f3f2;
   line-height: 36px;
-}
-
-.wordtext .word, .Portfolio {
+  color: rgb(145, 145, 145);
+  font-family: "Roboto";
+  font-size: 24px;
   text-align: center;
+  font-style: italic;
 }
 
-.wordtext .word p {
-  padding: 0 60px;
+.wordtext ul {
+  list-style: none;
+  display: flex;
+  width: 70px;
+  margin: auto;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.wordtext ul li {
+  width: 15px;
+  height: 15px;
+  border: 2.5px solid #2ecc71;
+  border-radius: 50%;
+  transition: all ease-in-out .4s;
+}
+
+.wordtext ul li:hover {
+  background: #2ecc71ab;
+  box-shadow: .5px .5px 2px #575658;
 }
 
 /*_________________________*/
@@ -310,7 +345,8 @@ progress::-webkit-progress-bar {
 /* start style my Portfolio */
 
 .Portfolio h2 {
-  padding-top: 50px;
+  padding-top: 60px;
+  margin-top: 0;
 }
 
 .Portfolio p {
