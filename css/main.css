@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Fira+Sans');
 /* ------ start my rules  ----*/
 
-.container {
-  margin: auto;
-  width: 1110px;
-}
-
 body, body * {
   box-sizing: border-box;
 }
@@ -14,6 +9,11 @@ body {
   background: #fff;
   font-family: 'Fira Sans', sans-serif;
   line-height: 30px;
+}
+
+.container {
+  margin: auto;
+  width: 1110px;
 }
 
 h1, h2, h3 {
@@ -38,7 +38,15 @@ hr {
   border: 0;
 }
 
+/*_____________________end my rules_____________*/
+
 /* ------ start my header  ----*/
+
+.header {
+  text-transform: uppercase;
+}
+
+/*    start sider  */
 
 .header .slider {
   height: 730px;
@@ -80,9 +88,9 @@ hr {
   border: 2px solid #ffffff;
 }
 
-.header {
-  text-transform: uppercase;
-}
+/*______________________*/
+
+/*  start navbar  */
 
 .header .navbar {
   background: #263031;
@@ -121,7 +129,13 @@ hr {
   color: #2ecc71;
 }
 
-/* ------ start main body  ----*/
+/*_______________  end header __________________*/
+
+/*________________________________________________________*/
+
+/* -------------------- start main body  ----*/
+
+/*     start features    */
 
 /* main {
   height: 4000px;
@@ -150,6 +164,8 @@ section.features:first-child {
 }
 
 /* ______________________________________*/
+
+/*    start about me    */
 
 .width-100 {
   width: 100%;
@@ -184,6 +200,10 @@ section.features:first-child {
   overflow: hidden;
 }
 
+/*_________________________________*/
+
+/*  start hobbies   */
+
 .hobbies {
   display: flex;
   flex-wrap: wrap;
@@ -196,6 +216,8 @@ section.features:first-child {
 }
 
 /*_________________________________*/
+
+/*     start skills and progress   */
 
 .skills {
   display: flex;
@@ -245,12 +267,16 @@ progress::-webkit-progress-bar {
 
 /*_____________________________*/
 
+/*  start resume  */
+
 .myresume {
   background: #f3f3f2;
   text-align: center;
 }
 
 /*_____________________*/
+
+/*  start education and work experiensce */
 
 .myeducation .education, .myexperiensce .work {
   justify-content: space-between;
@@ -264,6 +290,8 @@ progress::-webkit-progress-bar {
 
 /*_____________________________*/
 
+/*    start my fav words and text  */
+
 .wordtext {
   background: #f3f3f2;
   line-height: 36px;
@@ -276,6 +304,8 @@ progress::-webkit-progress-bar {
 .wordtext .word p {
   padding: 0 60px;
 }
+
+/*_________________________*/
 
 /* start style my Portfolio */
 
@@ -313,6 +343,8 @@ progress::-webkit-progress-bar {
 
 /*___________________________*/
 
+/*   start contact   */
+
 .contactme {
   background: #252e30;
 }
@@ -325,6 +357,8 @@ progress::-webkit-progress-bar {
 .contact div {
   width: 45%;
 }
+
+/*_____________________________*/
 
 /*  start footer style */
 
