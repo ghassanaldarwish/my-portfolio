@@ -190,7 +190,8 @@ section.features:first-child {
   width: 60%;
   float: left;
   padding-left: 118px;
-  padding-top: 48px;
+  padding-top: 50px;
+  border-bottom: 50px;
 }
 
 .background-aboutme .about-me p {
@@ -199,6 +200,10 @@ section.features:first-child {
 
 .fix-flot {
   overflow: hidden;
+}
+
+.hobbies {
+  margin-top: 20px;
 }
 
 /*_________________________________*/
@@ -214,6 +219,10 @@ section.features:first-child {
 
 .hobbies section {
   width: 40%;
+}
+
+.myfeatures {
+  padding: 50px 0;
 }
 
 /*_________________________________*/
