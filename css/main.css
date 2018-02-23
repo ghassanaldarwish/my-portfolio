@@ -32,6 +32,12 @@ p {
   justify-content: space-between;
 }
 
+hr {
+  background: #cbcbcb;
+  height: 1px;
+  border: 0;
+}
+
 /* ------ start my header  ----*/
 
 .header .slider {
@@ -216,7 +222,6 @@ progress::-webkit-progress-value {
 progress::-webkit-progress-bar {
   background: #f3f3f2;
   background-color: #f3f3f2;
-   !important;
 }
 
 .meter {
