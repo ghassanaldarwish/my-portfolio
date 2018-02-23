@@ -107,6 +107,21 @@ hr {
   padding-top: 8px;
 }
 
+.header .navbar .container h2::before {
+  content: "g";
+  padding: 5px;
+  width: 39px;
+  height: 31px;
+  color: #fff;
+  background: #4b5456;
+  position: relative;
+  left: -14px;
+  top: -2px;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 2px 3px 5px #737171;
+}
+
 .header .navbar .container h2 span {
   color: #6fe082;
 }
@@ -458,7 +473,16 @@ hr.hr {
   font-weight: bolder;
 }
 
-.contactme h4, strong {
+.contactme label {
+  color: #f2f3f3;
+  font-size: 17px;
+  margin: 15px 0 5px 0;
+  margin-right: 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+strong {
   color: #f2f3f3;
   font-size: 17px;
   margin-bottom: 10px;
@@ -481,7 +505,7 @@ address {
 
 .contact .info p {
   margin-top: 0;
-  padding-top: 62px;
+  padding-top: 42px;
 }
 
 .contact div {
@@ -523,5 +547,5 @@ footer.footer {
   text-align: center;
   padding: 20px;
   color: #3e4648;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
