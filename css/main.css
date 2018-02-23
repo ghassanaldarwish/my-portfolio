@@ -299,12 +299,12 @@ progress::-webkit-progress-bar {
 
 .contanttext .word {
   margin-bottom: 24px;
+  border-left: 5px solid rgba(154, 152, 152, .55);
+  background: linear-gradient(to right, rgba(154, 152, 152, .15), #f3f3f2);
 }
 
 .contanttext .word p {
-  border-left: 5px solid rgba(154, 152, 152, .6);
   padding-left: 40px;
-  background: linear-gradient(to right, rgba(154, 152, 152, .15), #f3f3f2);
 }
 
 .wordtext {
