@@ -229,50 +229,68 @@ section.features:first-child {
 
 /*     start skills and progress   */
 
+.contentskills {
+  padding: 50px 0;
+}
+
 .skills {
   display: flex;
-  padding-top: 20px;
-  margin-top: 45px;
   justify-content: space-between;
   text-align: justify;
 }
 
-.skills h2 {
+.contentskills h2 {
   margin: 0;
 }
 
 progress {
   background-color: green;
   width: 100%;
-}
-
-progress::-webkit-progress-value {
-  background-color: green !important;
-  color: black;
-}
-
-progress::-webkit-progress-bar {
-  background: #f3f3f2;
-  background-color: #f3f3f2;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .meter {
   width: 45%;
 }
 
-.myresume button, .skills button {
+.skills button {
   border: 1px solid green;
   text-decoration: none;
   padding: 10px;
   margin-top: 33px;
-  margin-left: 25px;
   color: green;
   background: #fff;
 }
 
 .meter p {
-  margin-top: 33px;
-  margin-bottom: 43px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+progress[value="70"]::after {
+  content: "70%";
+  position: absolute;
+  top: 1px;
+  left: 278px;
+  color: #fff;
+}
+
+progress[value="60"]::after {
+  content: "60%";
+  position: absolute;
+  top: 1px;
+  left: 278px;
+  color: #fff;
+}
+
+progress[value="5"]::after {
+  content: "5%";
+  position: absolute;
+  top: 1px;
+  left: 278px;
+  color: #fff;
 }
 
 /*_____________________________*/
@@ -283,6 +301,16 @@ progress::-webkit-progress-bar {
   background: #f3f3f2;
   text-align: center;
   padding: 50px 0;
+}
+
+.myresume button {
+  border: 1px solid green;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 33px;
+  margin-left: 25px;
+  color: green;
+  background: #fff;
 }
 
 /*_____________________*/
