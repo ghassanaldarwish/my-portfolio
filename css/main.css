@@ -92,6 +92,38 @@ hr {
   border: 2px solid #ffffff;
 }
 
+.header .slider .intro button {
+  /*  button hover effect  */
+  letter-spacing: 2px;
+  transition: .5s;
+  position: relative;
+}
+
+.header .slider .intro button:hover {
+  /*  button hover effect  */
+  background: #020202ba;
+  color: #eef4f4;
+}
+
+.header .slider .intro button::before {
+  /*  button hover effect  */
+  content: "";
+  width: 185px;
+  height: 56px;
+  position: absolute;
+  border: 1px solid #fff;
+  left: -3px;
+  top: -3px;
+  background: transparent;
+}
+
+.header .slider .intro button:hover:before {
+  transform: scale(1.2, 1.8);
+  opacity: 0;
+  transition: all ease-out .5s;
+  /* i do't wanna te effaxt back slowly*/
+}
+
 /*______________________*/
 
 /*  start navbar  */
@@ -262,7 +294,7 @@ section.features:first-child {
 }
 
 .hobbies i {
-  transition: all ease-in-out .7s;
+  transition: all ease-in-out .5s;
 }
 
 .hobbies i:hover {
@@ -314,6 +346,39 @@ progress[value] {
   background: #fff;
 }
 
+.skills button {
+  /*  button hover effect  */
+  letter-spacing: 2px;
+  transition: .5s;
+  position: relative;
+}
+
+.skills button:hover {
+  /*  button hover effect  */
+  background: #008000cf;
+  color: #fff;
+}
+
+.skills button::before {
+  /*  button hover effect  */
+  content: "";
+  width: 128px;
+  height: 41px;
+  position: absolute;
+  border: 1px solid green;
+  left: -2px;
+  top: -2px;
+  background: transparent;
+}
+
+.skills button:hover:before {
+  /*  button hover effect  */
+  transform: scale(1.2, 1.8);
+  opacity: 0;
+  transition: all ease-out .7s;
+  /* make the effacts just when hover and nover back*/
+}
+
 .meter p {
   margin-top: 60px;
   margin-bottom: 30px;
@@ -361,6 +426,39 @@ progress[value="5"]::after {
   margin-left: 25px;
   color: green;
   background: #fff;
+}
+
+.myresume button {
+  /*  button hover effect  */
+  letter-spacing: 2px;
+  transition: .5s;
+  position: relative;
+}
+
+.myresume button:hover {
+  /*  button hover effect  */
+  background: #008000cf;
+  color: #fff;
+}
+
+.myresume button::before {
+  /*  button hover effect  */
+  content: "";
+  width: 193px;
+  height: 41px;
+  position: absolute;
+  border: 1px solid green;
+  left: -2px;
+  top: -2px;
+  background: transparent;
+}
+
+.myresume button:hover:before {
+  /*  button hover effect  */
+  transform: scale(1.2, 1.8);
+  opacity: 0;
+  transition: all ease-out .7s;
+  /* make the effacts just when hover and nover back*/
 }
 
 /*_____________________*/
@@ -561,7 +659,37 @@ address {
   color: #f2f3f3;
   margin-top: 30px;
   border: 1px solid #4b5456;
-  font-weight: bold;
+}
+
+.form button {
+  /*  button hover effect  */
+  letter-spacing: 2px;
+  transition: .5s;
+  position: relative;
+}
+
+.form button:hover {
+  /*  button hover effect  */
+  background: #f2f3f3;
+  color: #191f21;
+}
+
+.form button::before {
+  /*  button hover effect  */
+  content: "";
+  width: 184px;
+  height: 56px;
+  position: absolute;
+  border: 1px solid #4b5456;
+  left: -2px;
+  top: -2px;
+  background: transparent;
+}
+
+.form button:hover:before {
+  transform: scale(1.2, 1.8);
+  opacity: 0;
+  transition: all ease-out .5s;
 }
 
 /*_____________________________*/
