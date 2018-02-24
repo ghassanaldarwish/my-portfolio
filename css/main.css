@@ -39,6 +39,14 @@ hr {
   border: 0;
 }
 
+button, li {
+  transition: transform 100ms;
+}
+
+button:active, li:active {
+  transform: scale(.9);
+}
+
 /*_____________________end my rules_____________*/
 
 /* ------ start my header  ----*/
@@ -90,19 +98,20 @@ hr {
   width: 185px;
   height: 56px;
   border: 2px solid #ffffff;
+  outline: transparent;
 }
 
 .header .slider .intro button {
   /*  button hover effect  */
   letter-spacing: 2px;
-  transition: .5s;
+  transition: background color .5s;
   position: relative;
 }
 
 .header .slider .intro button:hover {
   /*  button hover effect  */
-  background: #020202ba;
-  color: #eef4f4;
+  background: #ffffffd4;
+  color: #020202ba;
 }
 
 .header .slider .intro button::before {
@@ -118,9 +127,9 @@ hr {
 }
 
 .header .slider .intro button:hover:before {
-  transform: scale(1.2, 1.8);
+  transform: scale(1.4, 2);
   opacity: 0;
-  transition: all ease-out .5s;
+  transition: all ease-out .4s;
   /* i do't wanna te effaxt back slowly*/
 }
 
@@ -151,7 +160,7 @@ hr {
   top: -2px;
   text-align: center;
   font-size: 40px;
-  box-shadow: 2px 3px 5px #737171;
+  box-shadow: 2px 2px 1px #ffffff8a;
 }
 
 .header .navbar .container h2 span {
@@ -344,12 +353,13 @@ progress[value] {
   margin-top: 33px;
   color: green;
   background: #fff;
+  outline: transparent;
 }
 
 .skills button {
   /*  button hover effect  */
   letter-spacing: 2px;
-  transition: .5s;
+  transition: color background box-shadow .5s;
   position: relative;
 }
 
@@ -357,6 +367,7 @@ progress[value] {
   /*  button hover effect  */
   background: #008000cf;
   color: #fff;
+  box-shadow: 6px 6px 11px #191f21;
 }
 
 .skills button::before {
@@ -426,12 +437,13 @@ progress[value="5"]::after {
   margin-left: 25px;
   color: green;
   background: #fff;
+  outline: transparent;
 }
 
 .myresume button {
   /*  button hover effect  */
   letter-spacing: 2px;
-  transition: .5s;
+  transition: background color box-shadow .5s;
   position: relative;
 }
 
@@ -439,6 +451,7 @@ progress[value="5"]::after {
   /*  button hover effect  */
   background: #008000cf;
   color: #fff;
+  box-shadow: 8px 8px 12px #191f21;
 }
 
 .myresume button::before {
@@ -607,7 +620,7 @@ hr.hr {
 }
 
 strong {
-  color: #f2f3f3;
+  color: #5d6767;
   font-size: 17px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -664,14 +677,21 @@ address {
 .form button {
   /*  button hover effect  */
   letter-spacing: 2px;
-  transition: .5s;
+  transition: background color box-shadow .5s;
   position: relative;
+  outline: transparent;
+  transition: transform 10ms;
 }
 
 .form button:hover {
   /*  button hover effect  */
   background: #f2f3f3;
   color: #191f21;
+  box-shadow: 9px 9px 16px #191f21;
+}
+
+.form button:active {
+  transform: scale(.8);
 }
 
 .form button::before {
@@ -719,7 +739,7 @@ footer.footer {
 }
 
 .footer ul li i {
-  transition: all ease-in-out .7s;
+  transition: .5s;
 }
 
 .footer ul li i:hover {
