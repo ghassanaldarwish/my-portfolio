@@ -739,7 +739,7 @@ footer.footer {
 }
 
 .footer ul li i {
-  transition: .5s;
+  transition: color .7s;
 }
 
 .footer ul li i:hover {
