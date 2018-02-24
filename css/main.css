@@ -21,6 +21,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   color: #4a5556;
   font-family: 'Cinzel', serif;
+  cursor: no-drop;
 }
 
 p {
@@ -118,7 +119,7 @@ button:active, li:active {
   /*  button hover effect  */
   content: "";
   width: 185px;
-  height: 56px;
+  height: 55px;
   position: absolute;
   border: 1px solid #fff;
   left: -3px;
@@ -174,20 +175,21 @@ button:active, li:active {
   color: #eef4f4;
 }
 
-.header .navbar .container ul li {
+.header .navbar ul li {
   float: left;
   padding: 10px;
 }
 
-.header .navbar .container ul li a {
+.header .navbar ul li a, .header .navbar ul li {
   text-decoration: none;
   color: #fff;
-  transition: color ease .5s;
+  transition: all .4s;
 }
 
-.header .navbar .container ul li a:hover, .header .navbar .container ul li.activ a {
+.header .navbar .container ul li a:hover, .header .navbar .container ul li.activ a, .header .navbar .container ul li:hover {
   color: #2ecc71;
   cursor: pointer;
+  transform: scale(1.2) translateY(-7px);
 }
 
 /*_______________  end header __________________*/
@@ -214,10 +216,16 @@ button:active, li:active {
 .background-features p {
   color: #9a9898;
   text-align: justify;
+  transform: rotate(-4deg);
 }
 
 .features {
   padding: 20px;
+}
+
+.features h2 {
+  padding: 20px;
+  transform: rotate(6deg);
 }
 
 section.features:first-child {
@@ -373,16 +381,16 @@ progress[value] {
 .skills button::before {
   /*  button hover effect  */
   content: "";
-  width: 128px;
+  width: 127px;
   height: 41px;
   position: absolute;
-  border: 1px solid green;
+  border: 2px solid green;
   left: -2px;
   top: -2px;
   background: transparent;
 }
 
-.skills button:hover:before {
+.skills button:hover::before {
   /*  button hover effect  */
   transform: scale(1.2, 1.8);
   opacity: 0;
@@ -460,9 +468,9 @@ progress[value="5"]::after {
   width: 193px;
   height: 41px;
   position: absolute;
-  border: 1px solid green;
+  border: 2px solid green;
   left: -2px;
-  top: -2px;
+  top: -3px;
   background: transparent;
 }
 
@@ -619,14 +627,14 @@ hr.hr {
   text-transform: uppercase;
 }
 
-strong {
-  color: #5d6767;
+.contactme strong {
+  color: #f2f3f3;
   font-size: 17px;
   margin-bottom: 10px;
   margin-right: 10px;
 }
 
-address {
+.address {
   color: #919191;
   font-size: 18px;
 }
@@ -680,7 +688,7 @@ address {
   transition: background color box-shadow .5s;
   position: relative;
   outline: transparent;
-  transition: transform 10ms;
+  transition: transform 200ms;
 }
 
 .form button:hover {
