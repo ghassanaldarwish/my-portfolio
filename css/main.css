@@ -45,7 +45,7 @@ button, li {
 }
 
 button:active, li:active {
-  transform: scale(.9);
+  transform: scale(.7);
 }
 
 /*_____________________end my rules_____________*/
@@ -218,7 +218,7 @@ button:active, li:active {
 
 .background-features p {
   color: #9a9898;
-  text-align: justify;
+  text-align: center;
   transform: rotate(-4deg);
   font-family: 'Reenie Beanie', cursive;
 }
