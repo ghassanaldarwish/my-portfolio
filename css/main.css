@@ -461,6 +461,15 @@ progress[value="5"]::after {
   color: #fff;
 }
 
+progress {
+  transition: all .7s;
+}
+
+progress:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 13px 9px rgba(0, 0, 0, 0.9)) blur(.70px);
+}
+
 /*_____________________________*/
 
 /*  start resume  */
@@ -739,6 +748,8 @@ hr.hr {
   background-color: #4b5456;
   height: 279px;
   border: 0;
+  color: #f2f3f3;
+  padding: 10px;
 }
 
 .form button {
