@@ -66,7 +66,11 @@ button:active, li:active {
   /* filter: invert(.8); */
   background-size: cover;
   text-align: center;
-  animation: filter 5s ease-in-out infinite alternate;
+  animation: filter 4s ease-in-out infinite alternate;
+}
+
+.header .slider:hover {
+  animation-name: none;
 }
 
 @keyframes filter {
