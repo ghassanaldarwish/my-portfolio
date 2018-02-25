@@ -10,6 +10,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
   line-height: 30px;
   font-size: 17px;
+  perspective: 600px;
 }
 
 .container {
@@ -806,3 +807,24 @@ footer.footer {
   50% {
     transform: translateY(-6px);
   }
+}
+
+.habibi {
+  /*    start my aninaton   */
+  animation-name: habibi;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+}
+
+@keyframes habibi {
+  from, to {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(0, 0, 6px) scale(1);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(0, 0, -6px) scale(0);
+  }
+}
