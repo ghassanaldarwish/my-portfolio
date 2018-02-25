@@ -22,6 +22,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   color: #4a5556;
   font-family: 'Cinzel', serif;
+  border-radius: 5px;
 }
 
 p {
@@ -42,6 +43,7 @@ hr {
 
 button, li {
   transition: transform 100ms;
+  border-radius: 4px;
 }
 
 button:active, li:active {
