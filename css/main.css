@@ -704,6 +704,8 @@ hr.hr {
   height: 56px;
   background-color: #4b5456;
   border: 0;
+  color: #f2f3f3;
+  padding: 10px;
 }
 
 .form textarea {
