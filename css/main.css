@@ -613,7 +613,7 @@ hr.hr {
 }
 
 .myproj .proj5:hover {
-  animation-name: none;
+  animation-iteration-count: 1;
   transform: scale(1.07);
 }
 
@@ -811,9 +811,12 @@ footer.footer {
 
 @keyframes button {
   from, to {
+    opacity: 1;
     transform: translateY(0);
   }
   50% {
+    transition: 1s;
+    opacity: .8;
     transform: translateY(-6px);
   }
 }
