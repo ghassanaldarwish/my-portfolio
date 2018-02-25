@@ -100,7 +100,7 @@ button:active, li:active {
   text-transform: uppercase;
   width: 185px;
   height: 56px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   outline: transparent;
 }
 
@@ -391,7 +391,7 @@ progress[value] {
   width: 127px;
   height: 41px;
   position: absolute;
-  border: 2px solid green;
+  border: 1px solid green;
   left: -2px;
   top: -2px;
   background: transparent;
@@ -477,7 +477,7 @@ progress[value="5"]::after {
   width: 193px;
   height: 41px;
   position: absolute;
-  border: 2px solid green;
+  border: 1px solid green;
   left: -2px;
   top: -3px;
   background: transparent;
@@ -604,10 +604,17 @@ hr.hr {
 .myproj div {
   width: 32%;
   height: 32%;
+  transition: .7s;
 }
 
 .myproj div:hover {
+  animation-play-state: paused;
+  transform: scale(1.07);
+}
+
+.myproj .proj5:hover {
   animation-name: none;
+  transform: scale(1.07);
 }
 
 .ghassanooo {
