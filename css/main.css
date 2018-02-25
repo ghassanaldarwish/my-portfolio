@@ -74,7 +74,7 @@ button:active, li:active {
     filter: blur(8px) invert(0);
   }
   100% {
-    filter: blur(0) invert(.3);
+    filter: blur(0) invert(.4);
   }
 }
 
