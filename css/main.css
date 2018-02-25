@@ -39,6 +39,7 @@ hr {
   background: #cbcbcb;
   height: 1px;
   border: 0;
+  margin: 0;
 }
 
 button, li {
@@ -557,6 +558,36 @@ hr.hr {
   font-size: 15px;
   text-align: center;
   filter: drop-shadow(8px 8px 3px rgba(0, 0, 0, 0.7));
+  display: inline-block;
+}
+
+span.bobble:hover {
+  opacity: 1;
+}
+
+span.bobble {
+  display: inline-block;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.8);
+  left: 16px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  filter: drop-shadow(8px 8px 3px rgba(0, 0, 0, 0.5));
+  position: relative;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all .3s;
+}
+
+span.bobble::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-width: 15px 15px 15px 74px;
+  border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+  border-style: solid;
+  left: -90px;
 }
 
 /*_____________________________*/
