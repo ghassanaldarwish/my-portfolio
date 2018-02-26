@@ -262,7 +262,7 @@ button:active, li:active {
 }
 
 .background-features p {
-  color: #9a9898;
+  color: #4e4949;
   text-align: center;
   transform: rotate(-4deg);
   font-family: 'Reenie Beanie', cursive;
@@ -637,6 +637,7 @@ span.bobble::after {
 
 .contanttext .word p {
   padding-left: 40px;
+  color: #4e4949;
 }
 
 .wordtext {
