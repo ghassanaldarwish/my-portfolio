@@ -65,6 +65,12 @@ button:active, li:active {
   transform: translate(-50%, -50%);
 }
 
+.grop-fix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* ------ start my header  ----*/
 
 .header {
