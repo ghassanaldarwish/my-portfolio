@@ -41,13 +41,17 @@ hr {
   border: 0;
 }
 
-button, li {
+button, li, .button {
   transition: transform 100ms;
   border-radius: 4px;
 }
 
 button:active, li:active {
   transform: scale(.7);
+}
+
+a {
+  text-decoration: none;
 }
 
 /*_____________________end my rules_____________*/
@@ -416,7 +420,7 @@ progress[value] {
   width: 45%;
 }
 
-.skills button {
+.skills .button {
   border: 1px solid green;
   text-decoration: none;
   padding: 10px;
@@ -426,21 +430,21 @@ progress[value] {
   outline: transparent;
 }
 
-.skills button {
+.skills .button {
   /*  button hover effect  */
   letter-spacing: 2px;
   transition: color background box-shadow .5s;
   position: relative;
 }
 
-.skills button:hover {
+.skills .button:hover {
   /*  button hover effect  */
   background: #008000cf;
   color: #fff;
   box-shadow: 6px 6px 11px #191f21;
 }
 
-.skills button::before {
+.skills .button::before {
   /*  button hover effect  */
   content: "";
   width: 127px;
@@ -453,7 +457,7 @@ progress[value] {
   visibility: hidden;
 }
 
-.skills button:hover::before {
+.skills .button:hover::before {
   /*  button hover effect  */
   transform: scale(1.2, 1.8);
   opacity: 0;
