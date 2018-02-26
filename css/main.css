@@ -71,6 +71,13 @@ button:active, li:active {
   clear: both;
 }
 
+.recipe-header {
+  background: url('../images/tortilla-patatas.jpg') no-repeat center, #FFF;
+  background-size: auto 100%;
+  /*  help to make the header more responcive */
+  min-height: calc(100vh / 3);
+}
+
 /* ------ start my header  ----*/
 
 .header {
