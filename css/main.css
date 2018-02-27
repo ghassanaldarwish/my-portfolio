@@ -1,6 +1,55 @@
 /* ------ start my rules  ----*/
 
-.container {
+/* @import url("reset.css"); */
+
+/**
+  *BASE
+  */
+
+ {
+  font-size: 0.625em;
+}
+
+body, body * {
+  box-sizing: border-box;
+}
+
+main {
+    max-width: 60%;
+    margin: auto;
+}
+
+header {
+  max-width: 60%;
   margin: auto;
-  width: 1110px;
+}
+
+#header-photo {
+  background: url('../mihnea/hurtig.jpg') no-repeat;
+  width: 100%;
+  height: 424px;
+  margin: auto;
+    }
+
+
+#logo-bar {
+  width: 30%;
+  float: left;
+  height: 50px;
+}
+
+#navigation-buttons {
+  width: 70%;
+  float: left;
+  height: 50px;
+}
+
+#navigation-buttons li {
+  display: inline-block;
+}
+
+.div-middle {
+  width: 30%;
+  float: left;
+  background-color: blue;
 }
