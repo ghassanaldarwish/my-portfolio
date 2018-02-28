@@ -26,6 +26,7 @@ header {
 
 #header-photo {
   background: url('../mihnea/hurtig.jpg') no-repeat;
+  background-size: cover;
   width: 100%;
   height: 424px;
   margin: auto;
@@ -36,20 +37,70 @@ header {
   width: 30%;
   float: left;
   height: 50px;
+  background: rgba(211,211,211, 0.5);
+  text-align: right;
+}
+
+
+#logo-bar {
+  text-align: right
+-
 }
 
 #navigation-buttons {
   width: 70%;
   float: left;
   height: 50px;
+  background: rgba(211,211,211, 0.5);
+
 }
 
 #navigation-buttons li {
   display: inline-block;
+  margin-left: 5em;
+  /* background: rgba(211,211,211, 0.5); */
+
 }
+/*
+.section1 {
+  max-width: 60%;
+  background: #;
+} */
 
 .div-middle {
-  width: 30%;
   float: left;
-  background-color: blue;
+  max-width: 33.33333333333333333333333%;
+  max-height: 35vh;
+  background: rgba(126,192,238, 0.5);
+}
+
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.section2 {
+  background: black;
+}
+
+#section2-left {
+  width: 30%;
+  height: 300px;
+  background: black;
+  float: left;
+}
+
+.section2-UPPER-right {
+  width: 35%;
+  background: red;
+  float: left;
+  padding: 2%;
+}
+
+.section2-LOWER-right {
+  width: 35%;
+  background: red;
+  float: left;
+  padding: 2%;
 }
