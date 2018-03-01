@@ -71,7 +71,7 @@ a {
 
 .grop-fix::after {
   content: "";
-  display: table;
+  display: block;
   clear: both;
 }
 
@@ -176,9 +176,9 @@ a {
 }
 
 .header .slider .intro button:hover:before {
-  transform: scale(1.4, 2);
+  transform: scale(1.6, 2.2);
   opacity: 0;
-  transition: all ease-out .4s;
+  transition: all ease-out .6s;
   visibility: visible;
   /* i do't wanna te effaxt back slowly*/
 }
@@ -189,7 +189,10 @@ a {
 
 .header .navbar {
   background: #263031;
-  overflow: hidden;
+  /* overflow: hidden; */
+  position: sticky;
+  top: 0;
+  /* make the navbar move with the screen it s sticky the position  */
 }
 
 .header .navbar .container h2 {
@@ -270,7 +273,7 @@ a {
   text-align: center;
   transform: rotate(-4deg);
   font-family: 'Reenie Beanie', cursive;
-  filter: drop-shadow(81px 41px 2px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(81px 41px 2px rgba(0, 0, 0, 0.5));
   transition: filter 2s;
 }
 
@@ -459,7 +462,7 @@ progress[value] {
 
 .skills .button:hover::before {
   /*  button hover effect  */
-  transform: scale(1.2, 1.8);
+  transform: scale(1.4, 2);
   opacity: 0;
   transition: all ease-out .7s;
   visibility: visible;
@@ -554,7 +557,7 @@ progress:hover {
 
 .myresume button:hover:before {
   /*  button hover effect  */
-  transform: scale(1.2, 1.8);
+  transform: scale(1.4, 2);
   opacity: 0;
   transition: all ease-out .7s;
   visibility: visible;
@@ -611,7 +614,7 @@ span.bobble {
   position: relative;
   border-radius: 5px;
   opacity: 0;
-  transition: all .3s;
+  transition: all .8s;
 }
 
 span.bobble::after {
@@ -863,7 +866,7 @@ span.bobble::after {
 }
 
 .form button:hover:before {
-  transform: scale(1.2, 1.8);
+  transform: scale(1.4, 2);
   opacity: 0;
   transition: all ease-out .5s;
   visibility: visible;
