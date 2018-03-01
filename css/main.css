@@ -1,6 +1,160 @@
 /* ------ start my rules  ----*/
 
-.container {
+/* @import url("reset.css"); */
+
+/**
+  *BASE
+  */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+  {
+  font-size: 0.625em;
+}
+
+body, body * {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 60%;
   margin: auto;
-  width: 1110px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  max-width: 60%;
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+#header-photo {
+  background: url('../mihnea/hurtig.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 424px;
+  margin: auto;
+}
+
+.section1 {
+  background-color: white;
+}
+
+#logo-bar {
+  width: 30%;
+  float: left;
+  height: 50px;
+  background: #252F31;
+  text-align: right;
+}
+
+#navigation-buttons {
+  width: 70%;
+  float: left;
+  height: 50px;
+  background: #252F31;
+}
+
+#navigation-buttons ul {
+  padding: 0;
+  float: right;
+  width: 50%;
+}
+
+#navigation-buttons li {
+  display: inline-block;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  margin-left: 5%;
+  /* margin-left: 5em; */
+  /* background: rgba(211,211,211, 0.5); */
+}
+
+a {color:#FFF;   text-decoration: none;}      /* unvisited link */
+a:visited {
+  color:#FFF;
+  text-decoration: none;
+  }  /* visited link */
+a:hover {color: #ccff00;   text-decoration: none;}  /* mouse over link */
+a:active {color:#ccff00;   text-decoration: none;}  /* selected link */
+
+.div-middle {
+  float: left;
+  width: 33.33%;
+
+  /* max-height: 35vh; */
+  background: rgba(126, 192, 238, 0.9);
+  padding: 1%;
+}
+
+.div-middle h2{
+  text-align: center;
+}
+
+.div-image {
+  width: 90%;
+}
+
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.section2 {
+  background: white;
+}
+
+#section2-left {
+  width: 30%;
+  float: left;
+}
+
+  #section2-left img {
+width: 150px;
+height: 150px;;
+}
+
+.section2-UPPER-right {
+  width: 35%;
+  background: white;
+  float: left;
+  padding: 2%;
+}
+
+.section2-LOWER-right {
+  width: 35%;
+  background: white;
+  float: left;
+  padding: 2%;
+}
+
+footer {
+  max-width: 60%;
+  margin: auto;
+  background-color: #252F31;
+  height: 50px;
+  z-index: 100;
+}
+
+.socialmedia ul {
+  /* width: 30%; */
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+  /* border: 1px solid white; */
+  text-align: center;
+  transform: translateY(25%);
+}
+
+.socialmedia li {
+  display: inline-block;
+  /* background-color: white; */
+  text-align: center;
+  margin-left: 5%;
+}
+
+i {
+  color: 000;
 }
