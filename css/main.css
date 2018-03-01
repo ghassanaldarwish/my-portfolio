@@ -6,6 +6,8 @@
   *BASE
   */
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
  {
   font-size: 0.625em;
 }
@@ -17,11 +19,15 @@ body, body * {
 main {
     max-width: 60%;
     margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
 header {
   max-width: 60%;
   margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
 }
 
 #header-photo {
@@ -31,6 +37,10 @@ header {
   height: 424px;
   margin: auto;
     }
+
+.section1 {
+  background-color: #252F31;
+}
 
 
 #logo-bar {
@@ -55,23 +65,34 @@ header {
 
 }
 
-#navigation-buttons li {
-  display: inline-block;
-  margin-left: 5em;
-  /* background: rgba(211,211,211, 0.5); */
+#navigation-buttons ul {
+    padding: 0;
+    float: right;
+    width: 50%;
+  }
 
+
+
+#navigation-buttons li {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    margin-left:5%;
+  /* margin-left: 5em; */
+  /* background: rgba(211,211,211, 0.5); */
 }
-/*
-.section1 {
-  max-width: 60%;
-  background: #;
-} */
+
+
+
+
 
 .div-middle {
   float: left;
   max-width: 33.33333333333333333333333%;
-  max-height: 35vh;
-  background: rgba(126,192,238, 0.5);
+  /* max-height: 35vh; */
+  background: rgba(126,192,238, 0.9);
+  padding: 1%;
 }
 
 .group::after {
@@ -103,4 +124,42 @@ header {
   background: red;
   float: left;
   padding: 2%;
+}
+
+footer {
+  max-width: 60%;
+  margin: auto;
+  background-color: #252F31;
+  height: 50px;
+}
+
+.footer::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+
+.footer ul {
+  /* width: 30%; */
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+  /* border: 1px solid white; */
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer li {
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  /* width: 100px;
+  height: 50px; */
+}
+
+
+i {
+  color: blue;
 }
