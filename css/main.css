@@ -1,6 +1,950 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Fira+Sans|Reenie+Beanie');
 /* ------ start my rules  ----*/
+
+body, body * {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 30px;
+  font-size: 17px;
+  perspective: 600px;
+}
 
 .container {
   margin: auto;
   width: 1110px;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: #4a5556;
+  font-family: 'Cinzel', serif;
+  border-radius: 5px;
+}
+
+p {
+  color: #919191;
+}
+
+.flexBox {
+  display: inline-flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+hr {
+  background: #cbcbcb;
+  height: 1px;
+  border: 0;
+}
+
+button, li, .button {
+  transition: transform 100ms;
+  border-radius: 4px;
+}
+
+button:active, li:active {
+  transform: scale(.7);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*_____________________end my rules_____________*/
+
+/*  helper classes  */
+
+.position-container {
+  position: relative;
+}
+
+/* .position-childs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.grop-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.recipe-header {
+  background: url('../images/tortilla-patatas.jpg') no-repeat center, #FFF;
+  background-size: auto 100%;
+  /*  help to make the header more responcive */
+  min-height: calc(100vh / 3);
+}
+
+/* ------ start my header  ----*/
+
+.header {
+  text-transform: uppercase;
+}
+
+/*    start sider  */
+
+.header .slider {
+  height: 730px;
+  background: url("../img/black2.png");
+  /* filter: invert(.8); */
+  background-size: cover;
+  text-align: center;
+  animation: filter 4s ease-in-out infinite alternate;
+}
+
+.header .slider:hover {
+  animation-name: none;
+}
+
+@keyframes filter {
+  0 {
+    filter: blur(8px) invert(0);
+  }
+  100% {
+    filter: blur(0) invert(.4);
+  }
+}
+
+.header .slider .intro {
+  padding-top: 265px;
+}
+
+.header .slider .intro .title {
+  border-top: 3px solid rgba(255, 255, 255, .4);
+  border-bottom: 3px solid rgba(255, 255, 255, .4);
+  width: 800px;
+  margin: auto;
+}
+
+.header .slider .intro h1 {
+  padding-top: 28px;
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  text-align: center;
+}
+
+.header .slider .intro button {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  margin-top: 40px;
+  text-transform: uppercase;
+  width: 185px;
+  height: 56px;
+  border: 1px solid #ffffff;
+  outline: transparent;
+}
+
+.header .slider .intro button {
+  /*  button hover effect  */
+  letter-spacing: 2px;
+  transition: all .5s;
+  position: relative;
+}
+
+.header .slider .intro button:hover {
+  /*  button hover effect  */
+  background: #ffffffd4;
+  color: #020202ba;
+}
+
+.header .slider .intro button::before {
+  /*  button hover effect  */
+  content: "";
+  width: 185px;
+  height: 55px;
+  position: absolute;
+  border: 1px solid #fff;
+  left: -3px;
+  top: -3px;
+  background: transparent;
+  visibility: hidden;
+}
+
+.header .slider .intro button:hover:before {
+  transform: scale(1.6, 2.2);
+  opacity: 0;
+  transition: all ease-out .6s;
+  visibility: visible;
+  /* i do't wanna te effaxt back slowly*/
+}
+
+/*______________________*/
+
+/*  start navbar  */
+
+.header .navbar {
+  background: #263031;
+  /* overflow: hidden; */
+  position: sticky;
+  top: 0;
+  /* make the navbar move with the screen it s sticky the position  */
+}
+
+.header .navbar .container h2 {
+  float: left;
+  color: #eef4f4;
+  padding-top: 8px;
+}
+
+.header .navbar .container h2::before {
+  content: "g";
+  padding: 5px;
+  width: 39px;
+  height: 31px;
+  color: #fff;
+  background: #4b5456;
+  position: relative;
+  left: -14px;
+  top: -2px;
+  text-align: center;
+  font-size: 40px;
+  filter: drop-shadow(5px 5px 4px #ffffff8a);
+}
+
+.header .navbar .container h2 span {
+  color: #6fe082;
+}
+
+.header .navbar .container ul {
+  list-style: none;
+  padding-left: 0;
+  float: right;
+  color: #eef4f4;
+}
+
+.header .navbar ul li {
+  float: left;
+  padding: 10px;
+}
+
+.header .navbar ul li a, .header .navbar ul li {
+  text-decoration: none;
+  color: #fff;
+  transition: all .4s;
+}
+
+.header .navbar .container ul li a:hover, .header .navbar .container ul li.activ a, .header .navbar .container ul li:hover {
+  color: #2ecc71;
+  cursor: pointer;
+  transform: scale(1.2) translateY(-7px);
+}
+
+/*_______________  end header __________________*/
+
+/*________________________________________________________*/
+
+/* -------------------- start main body  ----*/
+
+/*     start features    */
+
+/* main {
+  height: 4000px;
+  /* just to make the height clear :) */
+
+.background-features {
+  background: #fff;
+  font-size: 35px;
+}
+
+.background-features h2 {
+  color: #4a5556;
+  text-transform: uppercase;
+  filter: drop-shadow(81px 41px 3px rgba(0, 0, 0, .5));
+  transition: filter 2s;
+}
+
+.background-features p {
+  color: #4e4949;
+  text-align: center;
+  transform: rotate(-4deg);
+  font-family: 'Reenie Beanie', cursive;
+  filter: drop-shadow(81px 41px 2px rgba(0, 0, 0, 0.5));
+  transition: filter 2s;
+}
+
+.background-features p:hover, .background-features h2:hover {
+  filter: none;
+}
+
+.features {
+  padding: 20px;
+}
+
+.features h2 {
+  padding: 20px;
+  transform: rotate(6deg);
+  font-family: 'Reenie Beanie', cursive;
+}
+
+section.features:first-child {
+  padding-left: 0;
+}
+
+/* ______________________________________*/
+
+/*    start about me    */
+
+.width-100 {
+  width: 100%;
+}
+
+.background-aboutme {
+  background: #f3f3f2;
+}
+
+.background-aboutme .image {
+  width: 40%;
+  float: left;
+}
+
+.background-aboutme .image img {
+  width: 100%;
+  background-size: cover;
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
+  transition: filter 1s;
+}
+
+.background-aboutme .image img:hover {
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9)) blur(3px);
+}
+
+.background-aboutme .about-me {
+  width: 60%;
+  float: left;
+  padding-left: 90px;
+  padding-top: 50px;
+  border-bottom: 50px;
+}
+
+.background-aboutme .about-me p {
+  text-align: justify;
+}
+
+.fix-flot {
+  overflow: hidden;
+}
+
+.hobbies h3 {
+  font-size: 16px;
+}
+
+/*_________________________________*/
+
+/*  start hobbies   */
+
+.hobbies {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 31px;
+  justify-content: space-between;
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+
+.hobbies section {
+  width: 40%;
+}
+
+.myfeatures {
+  padding: 50px 0;
+}
+
+/* .ff {
+  display: flex;
+} */
+
+.hobbies .i {
+  float: left;
+  display: inline-block;
+  margin-right: 0px;
+  padding-top: 11px;
+  padding-right: 17px;
+  color: #2ecc71;
+}
+
+.hobbies i {
+  transition: all ease-in-out .5s;
+}
+
+.hobbies i:hover {
+  transform: scale(.75);
+  color: #22a55a;
+}
+
+/*_________________________________*/
+
+/*     start skills and progress   */
+
+.contentskills {
+  padding: 50px 0;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.contentskills h2 {
+  margin: 0;
+}
+
+progress {
+  /* background-color: green; */
+  /* width: 100%; */
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+progress[value] {
+  width: 100%;
+  height: 20px;
+}
+
+.meter {
+  width: 45%;
+}
+
+.skills .button {
+  border: 1px solid green;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 33px;
+  color: green;
+  background: #fff;
+  outline: transparent;
+}
+
+.skills .button {
+  /*  button hover effect  */
+  letter-spacing: 2px;
+  transition: color background box-shadow .5s;
+  position: relative;
+}
+
+.skills .button:hover {
+  /*  button hover effect  */
+  background: #008000cf;
+  color: #fff;
+  box-shadow: 6px 6px 11px #191f21;
+}
+
+.skills .button::before {
+  /*  button hover effect  */
+  content: "";
+  width: 127px;
+  height: 41px;
+  position: absolute;
+  border: 1px solid green;
+  left: -2px;
+  top: -2px;
+  background: transparent;
+  visibility: hidden;
+}
+
+.skills .button:hover::before {
+  /*  button hover effect  */
+  transform: scale(1.4, 2);
+  opacity: 0;
+  transition: all ease-out .7s;
+  visibility: visible;
+  /* make the effacts just when hover and nover back*/
+}
+
+.meter p {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+progress[value="70"]::after {
+  content: "70%";
+  position: absolute;
+  top: 1px;
+  left: 320px;
+  color: #fff;
+}
+
+progress[value="60"]::after {
+  content: "60%";
+  position: absolute;
+  top: 1px;
+  left: 267px;
+  color: #fff;
+}
+
+progress[value="5"]::after {
+  content: "5%";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  color: #fff;
+}
+
+progress {
+  transition: all .7s;
+}
+
+progress:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 13px 9px rgba(0, 0, 0, 0.9)) blur(.70px);
+}
+
+/*_____________________________*/
+
+/*  start resume  */
+
+.myresume {
+  background: #f3f3f2;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.myresume button {
+  border: 1px solid green;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 33px;
+  margin-left: 25px;
+  color: green;
+  background: #fff;
+  outline: transparent;
+}
+
+.myresume button {
+  /*  button hover effect  */
+  letter-spacing: 2px;
+  transition: background color box-shadow .5s;
+  position: relative;
+}
+
+.myresume button:hover {
+  /*  button hover effect  */
+  background: #008000cf;
+  color: #fff;
+  box-shadow: 8px 8px 12px #191f21;
+}
+
+.myresume button::before {
+  /*  button hover effect  */
+  content: "";
+  width: 193px;
+  height: 41px;
+  position: absolute;
+  border: 1px solid green;
+  left: -2px;
+  top: -3px;
+  background: transparent;
+  visibility: hidden;
+}
+
+.myresume button:hover:before {
+  /*  button hover effect  */
+  transform: scale(1.4, 2);
+  opacity: 0;
+  transition: all ease-out .7s;
+  visibility: visible;
+  /* make the effacts just when hover and nover back*/
+}
+
+/*_____________________*/
+
+/*  start education and work experiensce */
+
+.myeducation .education, .myexperiensce .work {
+  justify-content: space-between;
+  display: flex;
+  text-align: justify;
+}
+
+.myworklife .allmyexp {
+  margin: 50px 0;
+}
+
+hr.hr {
+  border: 1px solid #cbcbcb;
+}
+
+.myeducation .education .edu, .myeducation .education .mydoc, .myexperiensce .work .workexp, .myexperiensce .work .workdis {
+  width: 45%;
+}
+
+.myworklife h3 {
+  font-size: 20px;
+  background: #2ecc71;
+  color: #fff;
+  width: 70px;
+  font-size: 15px;
+  text-align: center;
+  filter: drop-shadow(8px 8px 3px rgba(0, 0, 0, 0.7));
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+span.bobble:hover {
+  opacity: 1;
+}
+
+span.bobble {
+  display: inline-block;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.8);
+  left: 16px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  filter: drop-shadow(8px 8px 3px rgba(0, 0, 0, 0.5));
+  position: relative;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all .8s;
+}
+
+span.bobble::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-width: 15px 15px 15px 74px;
+  border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+  border-style: solid;
+  left: -90px;
+}
+
+/*_____________________________*/
+
+/*    start my fav words and text  */
+
+.contanttext {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.contanttext .word {
+  margin-bottom: 24px;
+  border-left: 5px solid rgba(154, 152, 152, .55);
+  background: linear-gradient(to right, rgba(154, 152, 152, .15), #f3f3f2);
+}
+
+.contanttext .word p {
+  padding-left: 40px;
+  color: #4e4949;
+}
+
+.wordtext {
+  background: #f3f3f2;
+  line-height: 36px;
+  color: rgb(145, 145, 145);
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 35px;
+  text-align: center;
+  font-style: italic;
+}
+
+.wordtext ul {
+  list-style: none;
+  display: flex;
+  width: 70px;
+  margin: auto;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.wordtext ul li {
+  width: 15px;
+  height: 15px;
+  border: 2.5px solid #2ecc71;
+  border-radius: 50%;
+  transition: all ease-in-out .4s;
+}
+
+.wordtext ul li:hover {
+  background: #2ecc71ab;
+  box-shadow: .5px .5px 2px #575658;
+  cursor: pointer;
+}
+
+/*_________________________*/
+
+/* start style my Portfolio */
+
+.Portfolio h2 {
+  padding-top: 60px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.Portfolio p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.myproj {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+.myproj div {
+  width: 32%;
+  height: 32%;
+  transition: .7s;
+}
+
+.myproj div:hover {
+  animation-play-state: paused;
+  transform: scale(1.07);
+}
+
+.myproj .proj5:hover {
+  animation-iteration-count: 1;
+  transform: scale(1.07);
+}
+
+.ghassanooo {
+  /*    start my aninaton   */
+  animation-name: ghassanooo;
+  animation-iteration-count: infinite;
+  animation-duration: .8s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes ghassanooo {
+  from, to {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-5px, 0, 0) rotate(-5deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(5px, 0, 0) rotate(5deg);
+  }
+}
+
+.myproj div img {
+  width: 92%;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 10px 10px 15px #ccc;
+}
+
+/*___________________________*/
+
+/*   start contact   */
+
+.contactme {
+  background: #252e30;
+}
+
+.contactme h2 {
+  margin-bottom: 0px;
+  color: #f2f3f3;
+  font-weight: bolder;
+}
+
+.contactme label {
+  color: #f2f3f3;
+  font-size: 17px;
+  margin: 15px 0 5px 0;
+  margin-right: 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.contactme strong {
+  color: #f2f3f3;
+  font-size: 17px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.address {
+  color: #919191;
+  font-size: 18px;
+}
+
+.contactme .mycontact {
+  padding: 50px 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .info p {
+  margin-top: 0;
+  padding-top: 42px;
+}
+
+.contact div {
+  width: 45%;
+}
+
+.form input {
+  width: 100%;
+  height: 56px;
+  background-color: #4b5456;
+  border: 0;
+  color: #f2f3f3;
+  padding: 10px;
+}
+
+.form textarea {
+  width: 100%;
+  background-color: #4b5456;
+  height: 279px;
+  border: 0;
+  color: #f2f3f3;
+  padding: 10px;
+}
+
+.form button {
+  display: block;
+  width: 185px;
+  height: 56px;
+  font-size: 23px;
+  background-color: #191f21;
+  color: #f2f3f3;
+  margin-top: 30px;
+  border: 1px solid #4b5456;
+}
+
+.form button {
+  /*  button hover effect  */
+  letter-spacing: 2px;
+  transition: background color box-shadow .5s;
+  position: relative;
+  outline: transparent;
+  transition: transform 200ms;
+}
+
+.form button:hover {
+  /*  button hover effect  */
+  background: #f2f3f3;
+  color: #191f21;
+  box-shadow: 9px 9px 16px #191f21;
+}
+
+.form button:active {
+  transform: scale(.8);
+}
+
+.form button::before {
+  /*  button hover effect  */
+  content: "";
+  width: 184px;
+  height: 56px;
+  position: absolute;
+  border: 1px solid #4b5456;
+  left: -2px;
+  top: -2px;
+  background: transparent;
+  visibility: hidden;
+}
+
+.form button:hover:before {
+  transform: scale(1.4, 2);
+  opacity: 0;
+  transition: all ease-out .5s;
+  visibility: visible;
+}
+
+/*_____________________________*/
+
+/*  start footer style */
+
+footer.footer {
+  background: #191f21;
+  text-align: center;
+  padding: 20px;
+  color: #3e4648;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  margin: auto;
+}
+
+.footer ul li {
+  margin-left: 0;
+}
+
+.footer ul li i {
+  transition: all .5s;
+}
+
+.footer ul li i:hover {
+  transform: scale(1.3);
+  color: #fff;
+}
+
+/*    start my aninaton   */
+
+.butoonani:hover {
+  /*    start my aninaton   */
+  animation-name: button;
+  animation-iteration-count: infinite;
+  animation-duration: .8s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes button {
+  from, to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    transition: 1s;
+    opacity: .8;
+    transform: translateY(-6px);
+  }
+}
+
+.habibi {
+  /*    start my aninaton   */
+  animation-name: habibi;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+}
+
+@keyframes habibi {
+  from, to {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(0, 0, 6px) scale(1);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(0, 0, -6px) scale(0);
+  }
 }
