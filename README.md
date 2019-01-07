@@ -1,4 +1,4 @@
-# my-first-portfolio
+# my-portfolio
 
 
 
@@ -6,13 +6,13 @@
 ![Screenshot](my-portfolio.png)
 
 
->my first real project my-portfolio builded by css and html 😎
+> my-portfolio builded by css and html 😎
 
 
 
 ## See it live
 
-[my-first-portfolio live on github](https://ghassanooooo.github.io/my-portfolio/)
+[my-portfolio live on github](https://ghassanooooo.github.io/my-portfolio/)
 
 
 
